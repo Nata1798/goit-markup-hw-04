@@ -85,30 +85,23 @@ img {
 .header-link:hover {
     color: #2196f3;
 }
-.header-mail{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575; 
-}
 .header-contacts-list:not(:first-child) {
     margin-left: 50px; 
 }
-.header-tel {
+.header-contacts-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    fill: #757575;
 }
-.header-mail:hover {
-    color: #2196f3;
+.header-contacts-link:hover {
     fill: #2196f3;
+    color: #2196f3;
 }
-.header-tel:hover {
-    color: #2196f3;
-    fill: #2196f3;
+.header-icon {
+    margin-right: 10px;
 }
                     /*Main title*/ 
 .main-section-first {
@@ -118,9 +111,9 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
                                       rgba(47, 48, 58, 0.4)), 
                                       url(../image/baground-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: absolute;      
-    background-size: cover;                            
+    background-repeat: no-repeat;      
+    background-size: cover; 
+    max-width: 1600px;                           
 }
 .main-section-text {
     font-weight: 900;
@@ -272,24 +265,25 @@ img {
     color: #757575;
     margin-bottom: 16px;
 }
-.socials-item {
+.socials-icon {
+    color: #afb1b8;
+}
+.socials-link {
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    fill: #afb1b8
 }
-.socials-item:hover,
-.socials-item:focus {
+.socials-link:hover,
+.socials-link:focus {
     background-color: #2196f3;
-}
-.socials-icon {
-    fill: #afb1b8;
-}
-.socials-icon:hover,
-.socials-icon:focus {
     fill: #ffffff;
+}
+.socials-icon:ho {
+    
 }
 .socials-list {
     display: flex;
@@ -299,6 +293,10 @@ img {
     margin-right: 10px;
 }
                     /*Regular clients*/
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .clients-title {
     font-weight: bold;
     font-size: 36px;
@@ -306,27 +304,41 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-top: 90px;
     margin-bottom: 50px;
 }
 .clients-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 94px;
 }
 .clients-link {
     display: block;
     width: 170px;
     height: 92px;
     fill: #afb1b8;
-}
-.clients-link:not(:last-child) {
-    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .clients-link:hover,
 .clients-link:focus {
     fill: #2196f3;
+}
+.clients-item {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #afb1b8;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #afb1b8;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #afb1b8;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #afb1b8;
+    border-radius: 4px;
+}
+.clients-item:not(:last-child) {
+    margin-right: 30px;
 }
                     /*Footer content*/
 .footer {
@@ -336,8 +348,8 @@ img {
 }
 .footer-conteiner {
     display: flex;
+    align-items: baseline;
 }
-
 .footer-logo {
     display: block;
     font-family: Raleway;
@@ -371,7 +383,6 @@ img {
     color: rgba(255, 255, 255, 0.6); 
 }
 .footer-socials-container {
-    margin-top: 20px;
     margin-left: 70px;
 }
 .social-title {
@@ -403,6 +414,13 @@ img {
     letter-spacing: 0.003em;
     color: #212121;
     margin-bottom: 50px;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 2px 2px 0px #0000001F,
+                0px 1px 2px 0px #00000014,
+                0px 3px 1px 0px #0000001A;
+
 }
 .portfolio-item:not(:last-child) {
     margin-right: 10px;
@@ -437,6 +455,12 @@ img {
 }
 .portfolio-list.portfolio-list:nth-child(3n) {
     margin-right: 0px;
+}
+.portfolio-list:hover,
+.portfolio-list:focus {
+    box-shadow: 1px 4px 6px 0px #00000029,
+                0px 4px 4px 0px #0000000F,
+                0px 1px 1px 0px #0000001F;
 }
 .portfolio-list-first {
     margin-bottom: 30px;

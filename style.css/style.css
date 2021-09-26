@@ -422,13 +422,6 @@ img {
     color: #212121;
     margin-bottom: 50px;
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
-    box-shadow: 0px 2px 2px 0px #0000001F,
-                0px 1px 2px 0px #00000014,
-                0px 3px 1px 0px #0000001A;
-
-}
 .portfolio-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -438,6 +431,13 @@ img {
     width: 145px;
     height: 40px;
     background-color: #f5f4fa;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    box-shadow: 0px 2px 2px 0px #0000001F,
+                0px 1px 2px 0px #00000014,
+                0px 3px 1px 0px #0000001A;
+
 }
 .portfolio-button-text {
     text-align: center;
@@ -463,14 +463,17 @@ img {
 .portfolio-list.portfolio-list:nth-child(3n) {
     margin-right: 0px;
 }
+.portfolio-list-first {
+    margin-bottom: 30px;
+}
+.portfolio-link {
+    display: block;
+}
 .portfolio-link:hover,
 .portfolio-link:focus {
     box-shadow: 1px 4px 6px 0px #00000029,
                 0px 4px 4px 0px #0000000F,
                 0px 1px 1px 0px #0000001F;
-}
-.portfolio-list-first {
-    margin-bottom: 30px;
 }
 .portfolio-image-comment {
     border-right-width: 1px;
